@@ -52,29 +52,29 @@ The above example will output the following content in the browser console.
 
 The service exposed the following API.
 ```typescript
-    // Clear the console and the internal buffer
-    clearBuffer(): void;
+// Clear the console and the internal buffer
+clearBuffer(): void;
 
-    // Clear the console and print the buffer to the console
-    dump(): void;
+// Clear the console and print the buffer to the console
+dump(): void;
 
-    // Get the internal buffer (the last N logged messages)
-    getBuffer(): Array<FrontendLogItem>;
+// Get the internal buffer (the last N logged messages)
+getBuffer(): Array<FrontendLogItem>;
 
-    // 🐳 Debug level, messages will not log to remote
-    debug(origin: string, method: string, message: string | object): void;
+// 🐳 Debug level, messages will not log to remote
+debug(origin: string, method: string, message: string | object): void;
     
-    // 🐸 Information level
-    information(origin: string, method: string, message: string | object): void;
+// 🐸 Information level
+information(origin: string, method: string, message: string | object): void;
     
-    // 🐠 Warning level
-    warning(origin: string, method: string, message: string | object): void;
+// 🐠 Warning level
+warning(origin: string, method: string, message: string | object): void;
     
-    // 🐝 Error level
-    error(origin: string, method: string, message: string | object): void;
+// 🐝 Error level
+error(origin: string, method: string, message: string | object): void;
     
-    // 🐞 Fatal level
-    fatal(origin: string, method: string, message: string | object): void;
+// 🐞 Fatal level
+fatal(origin: string, method: string, message: string | object): void;
 ```
 
 ## Author
